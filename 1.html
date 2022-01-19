@@ -12,6 +12,7 @@
 
   gtag('config', 'G-23MRH0HF99');
 </script>
+
 <style>
   a{
     text-decoration: none;
@@ -21,27 +22,56 @@
   h1{
     font-size: 60px;
     text-align: center;
-
+    border-bottom: 1px lightgray solid;
+    padding: 10px;
+    margin:0;
   }
 
-  #active{
-    color: darkgray;
+    #active{
+      color: darkgray;
+    }
+
+    #grid{
+      display: grid;
+      grid-template-columns: 230px 1fr;
+
+    }
+    #grid ol{
+      border-right: 1px lightgray solid;
+      width: 150px;
+      margin: 0;
+      padding: 30px;
+      padding-left: 50px;
+    }
+     #grid li{
+      padding: 2px;
+    }
+    #article{
+      padding: 20px;
+    }
   }
 </style>
   </head>
 
   <body>
     <h1><a href="index.html">In 2022</a></h1>
-    <ol>
-      <li><a href="1.html" id="active">Encanto</a></li>
-      <li><a href="2.html">West Side Story</a></li>
-    </ol>
 
-    <h2>Encanto</h2>
-    <p><img src="https://image.cnbcfm.com/api/v1/image/106980045-1637766874360-Encanto_Cropped_1.jpg?v=1637767028&w=929&h=523" width=50%>
-    </p>
-    <p>ost</p>
-    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/bBeZSuHI4Qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    <div id="grid">
+      <ol>
+        <li><a href="1.html" id="active">Encanto</a></li>
+        <li><a href="2.html">West Side Story</a></li>
+      </ol>
+
+      <div id="article">
+        <h2>Encanto</h2>
+        <p><img src="https://image.cnbcfm.com/api/v1/image/106980045-1637766874360-Encanto_Cropped_1.jpg?v=1637767028&w=929&h=523" width=50%>
+        </p>
+
+        <p>ost</p>
+        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/bBeZSuHI4Qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+      </div>
+    </div>
 
   </body>
 

@@ -23,8 +23,34 @@
   h1{
     font-size: 60px;
     text-align: center;
-
+    border-bottom: 1px lightgray solid;
+    padding: 10px;
+    margin:0;
   }
+
+
+    #active{
+      color: darkgray;
+    }
+
+    #grid{
+      display: grid;
+      grid-template-columns: 230px 1fr;
+
+    }
+    #grid ol{
+      border-right: 1px lightgray solid;
+      width: 150px;
+      margin: 0;
+      padding: 30px;
+      padding-left: 50px;
+    }
+    #grid li{
+      padding: 2px;
+    }
+    #article{
+      padding: 20px;
+    }
 
 
 </style>
@@ -32,11 +58,14 @@
 
   <body>
     <h1><a href="index.html">In 2022</a></h1>
+
+    <div id="grid">
     <ol>
       <li><a href="1.html">Encanto</a></li>
       <li><a href="2.html">West Side Story</a></li>
     </ol>
 
+<div id="article">
     <h2>Welcome</h2>
     Hi :) These are the all contents I've seen so far in 2022.
 
@@ -81,6 +110,8 @@
   </script>
   <!--End of Tawk.to Script-->
 </p>
+</div>
+</div>
 
   </body>
 </html>
